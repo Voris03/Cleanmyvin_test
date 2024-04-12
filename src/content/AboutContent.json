@@ -1,0 +1,17 @@
+{
+  "title": "О нас",
+  "text": "Cleanmyvin.com специализируется на сборе информации об автомобилях с аукционов Copart и IAAI. Мы предоставляем подробную информацию обо всех автомобилях, представленных на аукционах. ",
+  
+  "section": [
+    {
+      "title": "Why Antd?",
+      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Why styled-components?",
+      "content": "Styled Components gives you total control over your components.",
+      "icon": "notes.svg"
+    }
+  ]
+}
