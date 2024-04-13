@@ -32,7 +32,7 @@ const Header = () => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
+        {/* <CustomNavLinkSmall onClick={() => scrollTo("about")}>
           <Span>{"О нас"}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
@@ -40,15 +40,15 @@ const Header = () => {
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
           <Span>{"Машины"}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall
+        </CustomNavLinkSmall> */}
+        {/* <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}
         >
           <Span>
             <Button>{"Оставить заявку"}</Button>
           </Span>
-        </CustomNavLinkSmall>
+        </CustomNavLinkSmall> */}
       </>
     );
   };

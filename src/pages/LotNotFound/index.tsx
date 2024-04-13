@@ -8,7 +8,6 @@ const Home = () => {
     <Container>
       <div
         style={{
-          height: "80vh",
           alignItems: "center",
           display: "flex",
           justifyContent: "center",

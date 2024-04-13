@@ -37,7 +37,7 @@ const Home = () => {
           <Input.Search
             placeholder="VIN-код автомобиля"
             allowClear
-            enterButton="Search"
+            enterButton="Найти"
             size="large"
             onSearch={onSearch}
             style={{
@@ -51,7 +51,7 @@ const Home = () => {
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
-      />
+      /> */}
 
       <ContentBlock
         direction="left"
@@ -75,17 +75,12 @@ const Home = () => {
         content={ProductContent.text}
         icon="waving.svg"
         id="product"
-<<<<<<< HEAD
       />
-      <Contact
-=======
-      /> */}
       {/* <Contact
->>>>>>> 1ede3eb (asd)
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
-      /> */}
+      />  */}
     </Container>
   );
 };

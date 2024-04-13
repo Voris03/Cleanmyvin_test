@@ -33,7 +33,7 @@ const Home = () => {
   const [data, setData] = useState<any>();
 
   useEffect(() => {
-    fetch(`http://localhost:4545/lot/${vin}`)
+    fetch(`/api/lot/${vin}`)
       .then((res) => {
         return res.json();
       })
