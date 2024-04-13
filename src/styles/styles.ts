@@ -14,11 +14,17 @@ export const Styles = createGlobalStyle`
         font-style: normal;
     }
 
+    @font-face {
+        font-family: "Roboto", sans-serif;
+        src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+        font-style: normal;
+    }
+
 
     body,
     html,
     a {
-        font-family: 'Motiva Sans Light', sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
 
 
@@ -57,7 +63,7 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
+        font-family: 'Roboto', sans-serif;
         color: #18216d;
         font-size: 56px;
         line-height: 1.18;

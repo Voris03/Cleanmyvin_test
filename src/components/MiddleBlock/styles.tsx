@@ -12,6 +12,26 @@ export const MiddleBlockSection = styled("section")`
   }
 `;
 
+export const MinPara = styled("p")`
+  font-size: 13px;
+`;
+
+export const ServiceWrapper = styled("div")`
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  max-width: 100%;
+`;
+
+export const MinTitle = styled("h6")`
+  font-size: 15px;
+  line-height: 1rem;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "Motiva Sans Light", sans-serif;
+`;
+
 export const Content = styled("p")`
   padding: 0.75rem 0 0.75rem;
 `;
