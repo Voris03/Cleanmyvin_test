@@ -1,18 +1,25 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import MissionContent from "../../content/MissionContent.json"
+import MissionContent from "../../content/MissionContent.json";
 import AboutContent from "../../content/AboutContent.json";
-import ProductContent from "../../content/ProductContent.json"
+import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import { Input } from "antd";
+import { useHistory } from "react-router-dom";
 
-const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
 const Home = () => {
+  const history = useHistory();
+
+  const onSearch = (value: any, _e: any) => {
+    history.push(`/lot/${value}`);
+  };
+
   return (
     <Container>
       <ScrollToTop />
@@ -24,10 +31,25 @@ const Home = () => {
         icon="developer.svg"
         id="intro"
       />
-      <MiddleBlock
+
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div style={{ width: "333px" }}>
+          <Input.Search
+            placeholder="VIN-код автомобиля"
+            allowClear
+            enterButton="Search"
+            size="large"
+            onSearch={onSearch}
+            style={{
+              borderRadius: "3px",
+            }}
+          />
+        </div>
+      </div>
+
+      {/* <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
-        section={MiddleBlockContent.section}
         button={MiddleBlockContent.button}
       />
 
@@ -53,12 +75,17 @@ const Home = () => {
         content={ProductContent.text}
         icon="waving.svg"
         id="product"
+<<<<<<< HEAD
       />
       <Contact
+=======
+      /> */}
+      {/* <Contact
+>>>>>>> 1ede3eb (asd)
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
-      />
+      /> */}
     </Container>
   );
 };

@@ -1,5 +1,4 @@
 import { Row, Col } from "antd";
-import { withTranslation, TFunction } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 
@@ -27,7 +26,7 @@ interface SocialLinkProps {
   src: string;
 }
 
-const Footer = ({ t }: { t: TFunction }) => {
+const Footer = () => {
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
   };
@@ -57,6 +56,12 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Large to="/">{t("О нас")}</Large>
               <Large to="/">{t("Этапы работы")}</Large>
               <Large to="/">{t("Частые вопросы")}</Large>
+              <Language>{"Contact"}</Language>
+              <Large to="/">{"Tell us everything"}</Large>
+              <Para>{`Do you have any question? Feel free to reach out.`}</Para>
+              <a href="mailto:l.qqbadze@gmail.com">
+                <Chat>{`Let's Chat`}</Chat>
+              </a>
             </Col>
 
             <Col lg={8} md={8} sm={12} xs={12}>
@@ -74,7 +79,6 @@ const Footer = ({ t }: { t: TFunction }) => {
             justify="space-between"
             align="middle"
             style={{ paddingTop: "3rem" }}
-            
           >
             <Menu>Cleanmyvin</Menu>
             <Col lg={8} md={8} sm={8} xs={12}>
@@ -104,4 +108,4 @@ const Footer = ({ t }: { t: TFunction }) => {
   );
 };
 
-export default withTranslation()(Footer);
+export default Footer;

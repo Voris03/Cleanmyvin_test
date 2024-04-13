@@ -1,7 +1,9 @@
-import { TFunction } from "react-i18next";
+import { CSSProperties } from "react";
+
 export interface ContainerProps {
   border?: boolean;
   children: React.ReactNode;
+  style?: CSSProperties;
 }
 
 export interface ButtonProps {
@@ -20,7 +22,6 @@ export interface SvgIconProps {
 export interface InputProps {
   name: string;
   placeholder: string;
-  t: TFunction;
   type?: string;
   value?: string;
   onChange: (
