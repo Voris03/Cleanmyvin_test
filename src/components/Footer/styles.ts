@@ -21,7 +21,7 @@ export const NavLink = styled(Link)`
   font-size: 1rem;
   margin-bottom: 0.625rem;
   transition: all 0.2s ease-in-out;
-
+  
   &:hover,
   &:active,
   &:focus {
@@ -54,7 +54,6 @@ export const Large = styled(Link)`
   color: #000;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  text-transform: capitalize;
   line-height: 24px;
   display: block;
   margin-bottom: 0.625rem;
@@ -64,7 +63,6 @@ export const Large = styled(Link)`
   &:hover {
     color: rgb(255, 130, 92);
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
   }
 `;
 

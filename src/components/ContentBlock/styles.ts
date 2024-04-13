@@ -35,6 +35,13 @@ export const ServiceWrapper = styled("div")`
   max-width: 100%;
 `;
 
+export const Title = styled("h1")`
+  font-size: 36px;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+`;
+
 export const MinTitle = styled("h6")`
   font-size: 15px;
   line-height: 1rem;

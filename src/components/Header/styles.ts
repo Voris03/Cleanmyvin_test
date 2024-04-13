@@ -51,9 +51,12 @@ export const NotHidden = styled("div")`
   }
 `;
 
-export const Menu = styled("h5")`
+export const Menu = styled("div")`
   font-size: 2rem;
   font-weight: 600;
+  color: #18216d;
+  display: flex;
+  align-items: center;
   text-align: center;
 `;
 
